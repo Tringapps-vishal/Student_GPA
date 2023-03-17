@@ -7,10 +7,14 @@ public class Calculation {
     Logger log=Logger.getLogger("Calculation");
     Scanner sc=new Scanner(System.in);
     private int gpa=0;
-    private final String name;
+    private String name;
     public Calculation(String name)
     {
         this.name=name;
+    }
+    public Calculation()
+    {
+
     }
     public void callGpa(String grade)
     {
