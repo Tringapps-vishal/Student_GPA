@@ -8,7 +8,7 @@ public class Main {
     public static String name ;
     public static void main(String[] arg)
     {
-        Logger log= Logger.getLogger("Main");
+        final Logger log= Logger.getLogger("Main");
         Scanner sc=new Scanner(System.in);
         log.info("-------NEW STUDENT DETAILS-----");
         log.info("Enter your name:");
