@@ -15,22 +15,23 @@ public class Calculation {
     }
     public void callGpa(String grade)
     {
+        String msg="Name added successfully!!!";
             switch (grade) {
                 case "A" -> {
                     gpa = 4;
-                    log.info("Name added successfully!!!");
+                    log.info(msg);
                 }
                 case "B" -> {
                     gpa = 3;
-                    log.info("Name added successfully!!!");
+                    log.info(msg);
                 }
                 case "C" -> {
                     gpa = 2;
-                    log.info("Name added successfully!!!");
+                    log.info(msg);
                 }
                 case "D" -> {
                     gpa = 1;
-                    log.info("Name added successfully!!!");
+                    log.info(msg);
                 }
                 default -> {
                     log.info("Enter the valid grade A to D");

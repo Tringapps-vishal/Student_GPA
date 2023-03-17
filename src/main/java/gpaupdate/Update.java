@@ -7,7 +7,8 @@ import java.util.logging.Logger;
 
 public class Update {
     Logger log=Logger.getLogger("Update");
-    Calculation ca=new Calculation(Main.name);
+    Main m=new Main();
+    Calculation ca=new Calculation(m.name);
     public void updateGpa()
     {
         int choice;

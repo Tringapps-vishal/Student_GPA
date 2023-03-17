@@ -6,7 +6,10 @@ import calculation.*;
 import gpaupdate.Update;
 
 public class Main {
+
+
     public static String name;
+
     public static void main(String[] arg)
     {
         Logger log= Logger.getLogger("Main");
