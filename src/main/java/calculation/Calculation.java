@@ -1,0 +1,44 @@
+package calculation;
+
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Calculation {
+    Logger log=Logger.getLogger("Calculation");
+    Scanner sc=new Scanner(System.in);
+    private int gpa=0;
+    private final String name;
+    public Calculation(String name)
+    {
+        this.name=name;
+    }
+    public void callGpa(String grade)
+    {
+            switch (grade) {
+                case "A" -> {
+                    gpa = 4;
+                    log.info("Name added successfully!!!");
+                }
+                case "B" -> {
+                    gpa = 3;
+                    log.info("Name added successfully!!!");
+                }
+                case "C" -> {
+                    gpa = 2;
+                    log.info("Name added successfully!!!");
+                }
+                case "D" -> {
+                    gpa = 1;
+                    log.info("Name added successfully!!!");
+                }
+                default -> {
+                    log.info("Enter the valid grade A to D");
+                    log.info("RE-Enter your grade:");
+                    String reEnterGrade=sc.nextLine();
+                    callGpa(reEnterGrade);
+                }
+            }
+       log.log(Level.INFO,()-> name+" has "+gpa+" GPA.");
+    }
+}
