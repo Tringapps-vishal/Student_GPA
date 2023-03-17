@@ -20,5 +20,6 @@ public class Main {
         Update up=new Update();
         ca.callGpa(grade);
         up.updateGpa();
+
     }
 }
