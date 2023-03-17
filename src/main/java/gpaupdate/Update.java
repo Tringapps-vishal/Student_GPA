@@ -3,7 +3,6 @@ package gpaupdate;
 import calculation.Calculation;
 import java.util.Scanner;
 import java.util.logging.Logger;
-
 public class Update {
     Logger log=Logger.getLogger("Update");
     Calculation ca=new Calculation(null);
