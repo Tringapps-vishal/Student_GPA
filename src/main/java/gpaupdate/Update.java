@@ -1,14 +1,12 @@
 package gpaupdate;
 
 import calculation.Calculation;
-import gpamain.*;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Update {
     Logger log=Logger.getLogger("Update");
-    Main m=new Main();
-    Calculation ca=new Calculation(m.name);
+    Calculation ca=new Calculation(null);
     public void updateGpa()
     {
         int choice;
